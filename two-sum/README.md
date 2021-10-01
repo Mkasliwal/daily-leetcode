@@ -8,6 +8,8 @@ You can return the answer in any order.
 
 ## _Example 1_
 
+Ianput: nums = [2,7,11,15], target = 9
+
 Output: [0,1]
 
 Output: Because nums[0] + nums[1] == 9, we return [0, 1].
@@ -25,4 +27,4 @@ Output: [0,1]
 - Only one valid answer exists.
 
 ## _Bonus_
-- Algorithm should be in less than O(n^2)
+- Algorithm should take less than O(n^2) time complexity
