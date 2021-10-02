@@ -1,0 +1,11 @@
+Basic format for static sliding window of size "k"-
+
+while(j<arr.size()){
+  //some "calculations"
+  if(j-i+1<k)
+    j++;
+  else if(j-i+1==k){
+    //1. we need to find the results from "calculations"
+    //2. Slide the window
+  }
+}
