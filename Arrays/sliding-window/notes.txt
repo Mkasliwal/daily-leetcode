@@ -1,11 +1,17 @@
 Basic format for static sliding window of size "k"-
+Let suppose-
+  an array - arr
+  two iterators -i,j (keep track of starting and ending of window)
+  window size - k
 
-while(j<arr.size()){
-  //some "calculations"
-  if(j-i+1<k)
-    j++;
-  else if(j-i+1==k){
-    //1. we need to find the results from "calculations"
-    //2. Slide the window
+Format-
+  while(j<arr.size()){
+    //some "calculations"
+    if(j-i+1<k)
+      j++;
+    else if(j-i+1==k){
+      //1. we need to find the results from "calculations"
+      //2. Slide the window
+    }
   }
-}
+_______________________________________________________________________________________
