@@ -1,0 +1,31 @@
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var firstUniqChar = function(s) {
+    let map = new Map();
+    s = s.toLowerCase();
+    
+    for(let i=0; i<s.length; i++) {
+        map.set(s.charAt(i), map.has(s.charAt(i)) ? map.get(s.charAt(i)) + 1 : 1);
+    }
+
+    let firstNonRepChar = "";
+    for(let [key,value] of map) {
+        if(value == 1) {
+            firstNonRepChar = key;
+            break;
+        }
+    }
+    
+    if(firstNonRepChar == "") {
+        return -1;
+    }
+    
+    for(let i=0; i<s.length; i++) {
+        if(s.charAt(i) == firstNonRepChar) {
+            return i;
+        }
+    }
+};
+
