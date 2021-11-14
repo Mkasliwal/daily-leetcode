@@ -32,7 +32,6 @@ private:
     }
 public:
     int sumNumbers(TreeNode* root) {
-        // root->left
         if(root == NULL) {
             return 0;
         }
